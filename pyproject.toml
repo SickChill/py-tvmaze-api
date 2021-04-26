@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py-tvmaze-api"
-version = "2021.4.26-2"
+version = "2021.4.26-3"
 description = "A Python client for the TvMaze API."
 authors = [
     "Yakup Adaklı <yakup.adakli@gmail.com>",
