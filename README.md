@@ -7,16 +7,16 @@ A library that provides a Python interface to [the TvMaze API](http://www.tvmaze
 The easiest way to install the latest version
 is by using pip/easy_install to pull it from PyPI:
 
-    pip install python-tvmaze
+    pip install git+https://github.com/sickchill/python-tvmaze.git
 
 You may also use Git to clone the repository from
 Github and install it manually:
 
-    git clone https://github.com/yakupadakli/python-tvmaze.git
+    git clone https://github.com/sickchill/python-tvmaze.git
     cd python-tvmaze
     python setup.py install
 
-Python 2.7, 3.4 and 3.6, is supported for now.
+Python 2.7 and 3.6+, is supported for now.
 
 ## Usage
 

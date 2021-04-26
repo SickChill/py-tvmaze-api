@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "py-tvmaze-api"
+version = "2021.4.26-2"
+description = "A Python client for the TvMaze API."
+authors = [
+    "Yakup Adaklı <yakup.adakli@gmail.com>",
+    "Dustyn Gibson <miigotu@gmail.com>"
+]
+license = "MIT"
+readme = 'README.md'
+
+repository = "https://github.com/sickchill/python-tvmaze"
+homepage = "https://github.com/sickchill/python-tvmaze"
+keywords= [
+    "tvmaze",
+    "library"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Video",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]
+
+packages = [
+    { include = "tvmaze" },
+]
+
+[tool.poetry.plugins."poetry.application.plugin"]
+plugin = "poetry_date_version_plugin.plugin:VersionPlugin"
+
+[tool.version-plugin]
+write_to = 'tvmaze/version.py'
+regex = '__version__ = "{version}"'
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+requests = "^2.25.1"
+six = "^1.15.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
